@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+
 import './App.css';
+import rey1 from './images/imagen1.png'
+import rey2 from './images/imagen2.png'
+import rey3 from './images/imagen3.png'
+import './miCss.css';
+
 
 function App() {
+  let nombres=["Leonidas","Ragnar","Zeus"];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="contenedor">
+      
+      <div className="caja">
+        <img src={rey1}/>
+        <div className="nombre">{nombres[0]}</div>
+      </div>
+
+      <div className="caja">
+        <img src={rey2}/>
+        <div className="nombre">{nombres[1]}</div>
+      </div>
+
+      <div className="caja">
+        <img src={rey3}/>
+        <div className="nombre">{nombres[2]}</div>
+      </div>
+      
     </div>
   );
 }
